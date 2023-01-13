@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ECommerceShoppingCartAppASPNET7.props" />
+</Project>
