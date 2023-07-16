@@ -17,6 +17,7 @@ namespace ECommerceShoppingCartAppASPNET7.Controllers
         }
 
         // GET: Products
+        
         public async Task<IActionResult> Index()
         {
             return _context.Products != null ?

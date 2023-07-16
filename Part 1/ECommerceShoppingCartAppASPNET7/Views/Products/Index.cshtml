@@ -35,9 +35,10 @@
                 <td>@product.Name</td>
                 <td>@(Math.Round(product.Price, 2))</td>
                 <td><img src="~/images/@product.Photo" width="60" /> </td>
-
                 <td align="center">
-                    <a asp-controller="cart" asp-action="buy" asp-route-id="@product.Id"> <img src="~/images/BuyNow1.jpg" width="100" /></a>
+                    <button class="add-to-cart" data-product-id="@product.Id">
+                        Add to Cart
+                    </button>
                 </td>
             </tr>
         }
