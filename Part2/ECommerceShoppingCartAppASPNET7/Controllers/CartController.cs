@@ -64,9 +64,9 @@ namespace ECommerceShoppingCartAppASPNET7.Controllers
             return RedirectToAction("Index", "Cart");
         }
 
-        public IActionResult Remove(string id)
+        public IActionResult Remove(string productid)
         {
-            _cartService.RemoveItem(id);
+            _cartService.RemoveItem(productid);
             return RedirectToAction("Index", "Cart");
         }
 
